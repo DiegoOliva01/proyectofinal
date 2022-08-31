@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from views import *
+from appdatos.views import *
 
 urlpatterns = [
-    path("inicio",inicio,name="inicio"),
+    path("inicio/",inicio,name="inicio"),
 
     path("individuo/",individuo,name="individuo"),
     path("vehiculo/",vehiculo,name="vehiculo"),
