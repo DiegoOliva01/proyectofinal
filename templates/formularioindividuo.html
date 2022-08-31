@@ -1,0 +1,33 @@
+% extends "appdatos/padre.html" %}
+
+{% load static %}
+
+{% block titulo_de_la_pagina %}
+
+<h1 class ="mb-5"> mi_pagina_de_formulario_de_individuo </h1>
+
+
+
+{% endblock %}
+
+{% block contenido que cambia %}
+
+<form action="/formulario_individuo/" method="POST"> {% csrf_token %}
+   
+    <p>Nombre: <input type="text",,name="nombre"></p>
+    <p>Apellido: <input type="text",name="apellido"></p>
+    <p>DNI: <input type="number",name="dni"></p>
+    <p>Edad: <input type="number",name="edad"></p>
+    <p>Trabajo: <input type="text",name="trabajo"></p>
+    <p>Hijos: <input type="number",name="hijos"></p>
+    <p>Estado civil: <input type="text",name="estado_civil"></p>
+    <p>Numero de telefono: <input type="number",name="num_telefono"></p>
+
+    <input type="submit" value="Enviar">
+
+
+
+</form>
+
+
+{% endblock %}
